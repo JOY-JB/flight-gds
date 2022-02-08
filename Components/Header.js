@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { FaFacebook } from "react-icons/fa";
 import avatarDropdown from "../services/avatarDropdown";
+import Avatar from "./Avatar";
 
 const Header = () => {
   return (
-    <div className="navbar shadow-lg bg-custom-bg text-neutral-content px-4">
+    <div className="navbar shadow-2xl bg-custom-header-bg text-custom-header-text px-4">
       <div className="flex-1 hidden px-2 mx-2 lg:flex">
         <FaFacebook size="30" />
         <span className="text-lg font-bold pl-3">Flight GDS</span>
@@ -45,23 +46,23 @@ const Header = () => {
         </button>
       </div>
       <div className="flex-none">
-        <div className="avatar">
-          <div className="rounded-full w-10 h-10 m-1">
-            <img src="https://i.pravatar.cc/500?img=32" />
-          </div>
-        </div>
+        <Avatar image="https://i.pravatar.cc/500?img=32" />
         <div className="dropdown dropdown-end">
           <div tabIndex="0" className="btn btn-ghost rounded-btn">
             Joy Barua
           </div>
           <ul
             tabIndex="0"
-            className="p-2 shadow menu dropdown-content rounded-box w-52 bg-custom-hover-bg"
+            className="p-2 mt-4 shadow menu dropdown-content rounded-box w-52"
+            style={{
+              background: "#404E67",
+            }}
           >
             {avatarDropdown.map((item, key) => (
               <Link key={key} href={item.link} passHref>
-                <p className="block py-2.5 px-4 select-none rounded transition duration-200 hover:bg-white hover:text-custom-hover-text flex justify-between">
+                <p className="block py-2.5 px-4 select-none rounded transition duration-200 hover:border-custom-hover-bg border-transparent border-2 hover:text-white flex justify-between">
                   {item.name}
+                  <span className="my-auto">{item.icon}</span>
                 </p>
               </Link>
             ))}

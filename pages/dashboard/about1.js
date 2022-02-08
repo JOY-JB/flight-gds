@@ -1,10 +1,7 @@
+import { useRouter } from "next/router";
 import React from "react";
-import DashboardLayout from "../../Components/DashboardLayout";
-
-const about1 = () => {
-  return (
-    <h1 className="text-3xl text-center">This is dashboard About 1 page!!</h1>
-  );
+const About1 = () => {
+  return <div></div>;
 };
 
-export default about1;
+export default About1;

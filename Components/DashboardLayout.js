@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import links from "../services/links";
+import Breadcumb from "./Breadcumb";
 import Header from "./Header";
 import NavItem from "./NavItem";
 
@@ -41,7 +42,7 @@ const DashboardLayout = ({ children }) => {
         </div>
 
         <div
-          className={`sidebar bg-custom-bg text-blue-100 w-56 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out`}
+          className={`sidebar bg-custom-sidebar-bg text-blue-100 w-56 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out`}
         >
           <nav>
             {links.map((item, key) => (
@@ -49,8 +50,13 @@ const DashboardLayout = ({ children }) => {
             ))}
           </nav>
         </div>
-
-        <div className="flex-1 p-10 text-2xl font-bold">{children}</div>
+        <div
+          className="flex-1 px-10 shadow-lg"
+          style={{ background: "#F6F7FB" }}
+        >
+          <Breadcumb></Breadcumb>
+          <div className="bg-white min-h-screen shadow-lg">{children}</div>
+        </div>
       </div>
     </div>
   );

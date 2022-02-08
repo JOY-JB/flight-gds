@@ -1,12 +1,14 @@
+import { CgProfile, CgLogOut } from "react-icons/cg";
+
 const avatarDropdown = [
   {
-    icon: "",
-    name: "dropdown 1",
+    icon: <CgProfile />,
+    name: "Profile",
     link: "",
   },
   {
-    icon: "",
-    name: "dropdown 2",
+    icon: <CgLogOut />,
+    name: "Logout",
     link: "",
   },
 ];

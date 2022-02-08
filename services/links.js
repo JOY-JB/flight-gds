@@ -9,44 +9,74 @@ const links = [
   },
   {
     name: "About",
-    link: "/dashboard/about",
     icon: <AiOutlineInfoCircle />,
     subitem: [
       {
-        name: "item about",
+        name: "item about 1",
         link: "/dashboard/about1",
         icon: <AiFillHome />,
       },
       {
-        name: "item 2",
-        link: "/dashboard/subitem2",
+        name: "item about 2",
+        link: "/dashboard/about2",
         icon: <AiFillHome />,
       },
     ],
   },
   {
     name: "Features",
-    link: "/dashboard/features",
     icon: <AiFillHome />,
     subitem: [
       {
-        name: "item 1 features",
-        link: "/dashboard/features",
+        name: "item features 1",
+        link: "/dashboard/features1",
         icon: <AiFillHome />,
       },
       {
-        name: "item 2",
-        link: "/dashboard/subitem2",
+        name: "item features 2",
+        link: "/dashboard/features2",
+        icon: <AiFillHome />,
+      },
+    ],
+  },
+  {
+    name: "Gallary",
+    link: "/dashboard",
+    icon: <AiFillHome />,
+  },
+  {
+    name: "Contact Us",
+    link: "/dashboard",
+    icon: <AiFillHome />,
+  },
+  {
+    name: "Our Developers",
+    icon: <AiFillHome />,
+    subitem: [
+      {
+        name: "item features 1",
+        link: "/dashboard/features1",
         icon: <AiFillHome />,
       },
       {
-        name: "item 3",
-        link: "/dashboard/subitem3",
+        name: "item features 2",
+        link: "/dashboard/features2",
+        icon: <AiFillHome />,
+      },
+    ],
+  },
+  {
+    name: "Owners",
+    icon: <AiFillHome />,
+    subitem: [
+      {
+        name: "item features 1",
+        link: "/dashboard/features1",
         icon: <AiFillHome />,
       },
       {
-        name: "item 4",
-        link: "/dashboard/subitem3",
+        name: "item features 2",
+        link: "/dashboard/features2",
         icon: <AiFillHome />,
       },
     ],
